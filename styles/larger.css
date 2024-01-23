@@ -1,7 +1,8 @@
 @media only screen and (min-width:32em){
 body {
    
-    margin: 50px;
+    
+    margin: 0 200px 0 200px;
 }
 nav{
 
@@ -15,7 +16,7 @@ flex:   100%;
   
     .parent{ 
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         column-gap: 10px;
     }
     .card{
