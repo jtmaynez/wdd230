@@ -40,7 +40,7 @@ header{
 }
 header span{
     font-size: 30px;
-    color: var(--blueGray);
+    color: black;
     margin-left: 20px;
 
 }
@@ -73,7 +73,7 @@ font-size: 20px;
 }
 .active{
     background-color: var(--red);
-    color: white;
+    color: black;
 }
 .active:hover{
     background-color: var(--blueGray);
@@ -119,5 +119,5 @@ padding: .75rem 0;
 }
 
 #lastModified{
-color: var(--red);
+color: black;
 }
