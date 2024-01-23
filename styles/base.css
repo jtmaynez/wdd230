@@ -1,0 +1,110 @@
+/* Color Pallet */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root {
+--red: #FF5F5D;
+--blueGray: #3F7C85;
+--greenish: #00CCBF;
+--aqua: #72F2EB;
+--darkGray: #747E7E;
+}
+
+/* HTML Selector */
+h1{
+    color: var(--blueGray);
+    text-align: center;
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 5px;
+}
+h1, h2, header {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+      
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+header{
+    background-color: var(--greenish);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+header span{
+    font-size: 30px;
+    color: var(--blueGray);
+    margin-left: 20px;
+
+}
+nav{
+    background-color: var(--aqua);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav a {
+   
+    display: block;
+    color: var(--darkGray);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 25px;
+}
+nav a:hover{
+
+   background-color:var(--red); 
+   color: white;
+}
+.active{
+    background-color: var(--red);
+    color: white;
+}
+.active:hover{
+    background-color: var(--blueGray);
+}
+
+
+
+      
+/* Class */
+.card{
+    margin: 1rem 2vw;
+    border: 1px solid var(--darkGray);
+    background-color: var(--aqua);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card h2{
+background-color: var(--greenish);
+display: block;
+text-align: center;
+padding: .75rem 0;
+}
+.card p{
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+.card ul{
+    color: black;
+    list-style-type: none;
+    padding: 10px;
+}
+/* ID */
+#head-pic {
+    width: 120px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+#lastModified{
+
+}

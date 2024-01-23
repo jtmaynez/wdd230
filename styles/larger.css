@@ -1,0 +1,25 @@
+@media only screen and (min-width:32em){
+body {
+   
+    margin: 50px;
+}
+nav{
+
+    display: flex;   
+    justify-content: flex-end;
+    max-width: 100%;
+}
+nav a{
+flex:   100%;
+}
+  
+    .parent{ 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+    .card{
+        box-shadow: 1px 1px 10px var(--blueGray);
+    }
+
+}
