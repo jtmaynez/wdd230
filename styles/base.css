@@ -9,12 +9,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* @media (prefers-color-scheme: dark) {} Display dark mode in settings automatically */
+
 :root {
   --red: #ff5f5d;
   --blueGray: #3f7c85;
   --greenish: #00ccbf;
   --aqua: #72f2eb;
   --darkGray: #747e7e;
+  /* Dark Mode */
+  --darkRed: #fb4141;
+  --darkBlueGray: #002f33;
+  --darkGreenish: #008b86;
+  --darkAqua: #006d66;
+  --darkDarkGray: #2e2e2e;
 }
 
 /* HTML Selector */
@@ -31,6 +39,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: relative;
 }
 
 body {
@@ -111,6 +120,73 @@ footer p {
   text-decoration: none;
   font-weight: bold;
 }
+.navigation {
+  display: none;
+  /* display: none;     */
+}
+
+.navigation.open {
+  display: block;
+}
+.dark-mode {
+  background-color: var(--darkDarkGray);
+  color: white;
+  border-color: white;
+}
+.dark-mode .card {
+  background-color: var(--darkGreenish);
+}
+.dark-mode .card li {
+  color: black;
+}
+.dark-mode header {
+  background-color: var(--darkAqua);
+}
+.dark-mode footer {
+  background-color: var(--darkAqua);
+}
+.dark-mode .card h2 {
+  background-color: var(--darkBlueGray);
+}
+.dark-mode nav {
+  background-color: var(--darkGreenish);
+}
+.dark-mode .navigation a {
+  color: white;
+}
+.dark-mode .navigation a:hover {
+  color: var(--darkBlueGray);
+}
+.dark-mode .navigation a:hover {
+  background-color: var(--darkRed);
+}
+.dark-mode .active {
+  background-color: var(--darkRed);
+  /* color: var(--darkDarkGray); */
+}
+/* .dark-mode .active {
+  color: var(--darkDarkGray);
+} How do i get this to change color*/
+.dark-mode .card p {
+  color: black;
+}
+.dark-mode h1 {
+  color: var(--darkGreenish);
+  text-align: center;
+  margin-top: 15px;
+  border-bottom: 2px solid var(--darkRed);
+  padding-bottom: 5px;
+}
+.dark-mode #lastModified {
+  color: white;
+}
+.dark-mode span {
+  color: white;
+}
+.dark-mode .card a {
+  color: black;
+}
+
 /* ID */
 #head-pic {
   width: 120px;
@@ -139,13 +215,13 @@ footer p {
 
 #menu.open::before {
   content: "X";
+  /* background-color: var(--greenish); How do I make the background color the same as the menu */
 }
-
-.navigation {
-  display: none;
-  /* display: none;     */
-}
-
-.navigation.open {
-  display: block;
+#displayBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 24px;
+  font-size: 44px;
+  cursor: pointer;
 }
