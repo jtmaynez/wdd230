@@ -1,57 +1,55 @@
-const input = document.querySelector('input');
-const button = document.querySelector('button');
-const list = document.querySelector('#list');
+/** @format */
 
-const chaptersArray = getChapterList() || [];
+const input = document.querySelector("#favChap");
+const button = document.querySelector("button");
+const list = document.querySelector("#list");
 
-function displayList(item){
-    const li = document.createElement('li'); 
-    const btnDelete = document.createElement('button');
-    
-    li.textContent = input.value;
-      btnDelete .textContent = '❌';
+let chaptersArray = getChapterList() || [];
 
-      btnDelete.addEventListener('click', () => {
-          list.removeChild(li);
-          input.focus();
-      })
-      li.appendChild(btnDelete);
+function displayList(item) {
+  const li = document.createElement("li");
+  const btnDelete = document.createElement("button");
 
-      list.appendChild(li);
-      input.value = '';
-      
-  } 
-  input.focus();
-  
-});
+  li.textContent = item;
+  btnDelete.textContent = "❌";
 
-};
+  btnDelete.addEventListener("click", () => {
+    list.removeChild(li);
+    deleteChapter(li.textContent);
+    input.focus();
+  });
+
+  li.appendChild(btnDelete);
+
+  list.appendChild(li);
+}
+
 chaptersArray.forEach((chapter) => {
-    displayList(chapter);
+  displayList(chapter);
 });
+function deleteChapter(chapter) {
+  // Step 1
+  chapter = chapter.slice(0, chapter.length - 1);
 
-function deleteChapter(chapter){}
-
-function setChapterList() {
-    localStorage.setItem('chapters', JSON.stringify(chaptersArray));
+  // Step 2
+  chaptersArray = chaptersArray.filter((item) => item !== chapter);
+  // Step 3
+  setChapterList();
 }
+
 function getChapterList() {
-    return JSON.parse(localStorage.getItem('chapters'));
+  return JSON.parse(localStorage.getItem("myFavBOMList"));
 }
-
-
-
-
-
-
-button.addEventListener('click', (e) => {
-  e.preventDefault(); 
+function setChapterList() {
+  localStorage.setItem("myFavBOMList", JSON.stringify(chaptersArray));
+}
+button.addEventListener("click", (e) => {
+  e.preventDefault();
   if (input.value) {
     displayList(input.value);
-    chaptersArray.push(input.value);  
-    setChapterList ();
-    input.value = '';
+    chaptersArray.push(input.value);
+    setChapterList();
+    input.value = "";
     input.focus();
-    
-    
-    
+  }
+});
