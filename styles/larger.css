@@ -29,4 +29,7 @@
     display: flex;
     justify-content: flex-end;
   }
+  .hero span {
+    font-size: 2rem;
+  }
 }

@@ -46,6 +46,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
+  /* max-width: 1600px; */
 }
 header {
   background-color: var(--greenish);
@@ -84,6 +85,18 @@ footer p {
   text-align: center;
   font-size: 20px;
 }
+iframe {
+  border: solid 1.5px var(--darkGreenish);
+
+  position: relative;
+  width: 75%;
+  /* height: auto; */
+  margin: 1rem auto; /* Center horizontally */
+  display: block;
+  /* How do I make this into a square with hegitht */
+}
+
+/* Class */
 .active {
   background-color: var(--red);
   color: black;
@@ -91,8 +104,6 @@ footer p {
 .active:hover {
   background-color: var(--blueGray);
 }
-
-/* Class */
 .card {
   margin: 1rem 2vw;
   border: 1px solid var(--darkGray);
@@ -185,6 +196,28 @@ footer p {
 }
 .dark-mode .card a {
   color: black;
+}
+.dark-mode .hero span {
+  background-color: rgba(46, 46, 46, 0.7);
+  /* How to make this opacity */
+}
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* so that the text doesn't hang over the image */
+.hero span {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  text-align: center;
 }
 
 /* ID */

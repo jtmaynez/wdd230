@@ -35,9 +35,24 @@
 
   <body>
     <header>
-      <img id="head-pic" src="images/headerpic.png" alt="Picture of Justin" />
+      <img
+        id="head-pic"
+        src="images/headerpic.webp"
+        alt="Picture of Justin"
+        loading="lazy"
+        width="400"
+        height="600"
+      />
       <span>Justin T. Maynes</span>
-      <img src="images/dark-theme.svg" alt="dark mode" id="displayBtn" />
+      <img
+        src="images/dark-theme.svg"
+        alt="dark mode"
+        id="displayBtn"
+        loading="lazy"
+        width="50"
+        height="25"
+      />
+      <!-- How do I do height and width with svg without messing it up -->
     </header>
     <button id="menu"></button>
     <nav class="navigation">
@@ -49,6 +64,26 @@
       <a href="">Form</a>
     </nav>
     <main>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/tucson-arizona-temple-small.webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="images/tucson-arizona-temple-medium.webp"
+            media="(max-width: 960px)"
+          />
+          <img
+            src="images/tucson-arizona-temple-large.webp"
+            alt="The hero picture"
+            width="1500"
+            height="750"
+            loading="lazy"
+          />
+          <span> Tucson Arizona Temple</span>
+        </picture>
+      </div>
       <h1>WDD 230: Web Frontend Development</h1>
 
       <div class="parent">
@@ -71,7 +106,8 @@
             <li>
               Week 02:<a
                 href="https://jtmaynez.github.io/wdd230/week02/bom.html"
-                >Book of Mormon - Top 10 </a
+              >
+                Book of Mormon - Top 10 </a
               >|
               <a href="https://jtmaynez.github.io/wdd230/week02/design.html"
                 >Design </a
@@ -81,15 +117,17 @@
               </a>
             </li>
             <li>
-              Week 03:<a href="week03/images/landscape.webp">WebP</a>|
+              Week 03:<a href="week03/images/landscape.webp"> WebP</a> |
               <a href="https://jtmaynez.github.io/wdd230/week03/lazyload.html"
                 >Lazy Load</a
-              >|
+              >
+              |
               <a
                 href="https://jtmaynez.github.io/wdd230/week03/responsive-images.html"
                 >Responsive Images</a
               >
-              |<a href="https://jtmaynez.github.io/wdd230/week03/bom.html"
+              |
+              <a href="https://jtmaynez.github.io/wdd230/week03/bom.html"
                 >BOM Local Storage</a
               >
             </li>
@@ -102,9 +140,17 @@
           <h2>Information</h2>
           <p>Rexburg, Idaho</p>
           <p>72 F - Sunshine</p>
-          <p>Page Visits: 7</p>
+          <p>Number of Visits: <span class="visits"></span></p>
         </section>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85976.13886919882!2d-117.18604876347158!3d47.66976855229771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5361de8fa7347d63%3A0xc3a62004f5d8a26a!2sLiberty%20Lake%2C%20WA!5e0!3m2!1sen!2sus!4v1708359144174!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
     <footer>
       <p>Justin Maynes WA, United States</p>

@@ -27,3 +27,16 @@ modeButton.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
   main.classList.toggle("dark-mode");
 });
+
+// Visit Count
+const visitDisplay = document.querySelector(".visits");
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+  visitDisplay.textContent = numVisits;
+} else {
+  visitDisplay.textContent = `This is your first visit! Welcome!`;
+}
+numVisits++; // What does the ++ do?
+
+localStorage.setItem("numVisits-ls", numVisits);
