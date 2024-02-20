@@ -1,0 +1,42 @@
+/** @format */
+
+@media only screen and (min-width: 32em) {
+  body {
+    margin: 0 100px 0 100px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+  }
+  nav a {
+    flex: 100%;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 10px;
+  }
+  .card {
+    box-shadow: 1px 1px 10px var(--blueGray);
+  }
+  #menu {
+    display: none;
+  }
+  .navigation,
+  .navigation.open {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero span {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero section {
+    bottom: 30%; /* Adjust bottom position for smaller screens */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Move left by 50% of its own width */
+    width: 20%;
+  }
+}

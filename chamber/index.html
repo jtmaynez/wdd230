@@ -8,24 +8,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="WDD 230 - Web Frontend Development - Justin Maynes - Chamber of Commerce"
+      content=" Justin Maynes - Chamber of Commerce for Liberty Lake"
     />
     <meta name="author" content="Justin Maynes" />
-    <meta property="og:title" content="Liberty  Page" />
-    <meta property="og:type" content="Justin's official website" />
+    <meta property="og:title" content="Liberty Lake Commerce Page" />
+    <meta property="og:type" content="Chamber of Commerce official website" />
     <meta
       property="og:image"
-      content="https://jtmaynez.github.io/wdd230/images/liberty-lake.png"
+      content="https://jtmaynez.github.io/wdd230/chamber/images/liberty-lake.webp"
     />
-    <meta property="og:url" content="https://jtmaynez.github.io/wdd230/" />
-    <title>Justin Maynes - WDD 230 - Web Frontend Development</title>
+    <meta
+      property="og:url"
+      content="https://jtmaynez.github.io/wdd230/chamber/index.html"
+    />
+    <title>Liberty Lake Chambers of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/llfavicon.ico" />
   </head>
-  <main>
-    <header></header>
-    <body></body>
-    <footer></footer>
-  </main>
+  <body>
+    <header>
+      <button id="menu"></button>
+      <nav class="navigation">
+        <a
+          class="active"
+          href="https://jtmaynez.github.io/wdd230/chamber/index.html"
+          >Home</a
+        >
+        <a href="">Discover</a>
+        <a href="">Directory</a>
+        <a href="">Join</a>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <img src="images/ll-hero-large.webp" alt="City of Liberty Lake" />
+        <!-- <div class="hero">
+        <picture>
+          <source
+            srcset="images/ll-hero-small.webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="images/ll-hero-medium.webp"
+            media="(max-width: 960px)"
+          />
+          <img
+            src="images/ll-hero-large.webp"
+            alt="The hero picture"
+            width="1500"
+            height="750"
+            loading="lazy"
+          />
+        </picture> -->
+        <span> Liberty Lake Chamber of Commerce</span>
+        <section><a href="">Join the Chamber</a></section>
+      </div>
+      <div class="parent">
+        <section class="card">
+          <h2>Events</h2>
+          <h3>Trail Head Grand Opening</h3>
+          <p>
+            Join us for the ribbon cutting celebration of the renovated golf
+            course at 12:37 PM.
+          </p>
+          <h3>Ace Now Open</h3>
+          <p>We have a new hardware store, come check it out.</p>
+        </section>
+
+        <section class="card">
+          <h2>Weather</h2>
+          <p>Liberty Lake, WA</p>
+          <p>72 F - Sunshine</p>
+          <p>Humidity: N/A</p>
+          <p>Wind Chill: N/A</p>
+        </section>
+      </div>
+      <div class="member-spot">
+        <h2>Member Spotlights:</h2>
+        <section class="ads">
+          <h3>Trailhead</h3>
+          <p>Where Golfers go to relax!</p>
+          <a href="">trailhead@email.com</a>
+          <a href="">111-111-1111</a>
+          <a href="">Website</a>
+        </section>
+        <section class="ads">
+          <h3>Yokes</h3>
+          <p>Shop Fresh!</p>
+          <a href="">Yokes@email.com</a>
+          <a href="">222-222-2222</a>
+          <a href="">Website</a>
+        </section>
+        <section class="ads">
+          <h3>Barlows</h3>
+          <p>New location, come visit us.</p>
+          <a href="">Barlows@email.com</a>
+          <a href="">333-333-3333</a>
+          <a href="">Website</a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <img src="images/lllogo.webp" alt="Liberty Lake Logo" />
+        <div class="footer-text">
+          <p>Justin Maynes WA, United States</p>
+          <p id="lastModified"></p>
+          <p>Number of Visits: <span class="visits"></span></p>
+          <p id="year"></p>
+          <p>This project is for WDD 230, and not real.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+  </body>
 </html>

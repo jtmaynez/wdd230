@@ -1,8 +1,194 @@
 /** @format */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --primary-color: #67b8de;
   --secondary-color: #91c9e8;
   --accent1-color: #b4dced;
   --accent2-color: #e8f8ff;
+}
+/* HTML Selectors */
+p {
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav a:hover {
+  background-color: var(--accent2-color);
+  color: black;
+}
+h2 {
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  grid-template-columns: auto 1fr;
+}
+
+.footer-content {
+  text-align: center;
+  align-items: center;
+}
+.footer-content p {
+  text-align: center;
+  font-size: 1rem;
+}
+footer img {
+  max-width: 100px; /* Adjust the max-width as needed */
+}
+
+/* Class Styles */
+.active {
+  background-color: var(--accent2-color);
+  color: black;
+}
+.active:hover {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+.navigation {
+  display: none;
+}
+
+.navigation.open {
+  display: block;
+}
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* so that the text doesn't hang over the image */
+.hero span {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+/* .hero section {
+  position: absolute;
+  bottom: 20%;
+  left: 35%;
+  width: 25%;
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  border-radius: 10%;
+  text-decoration: none;
+} */
+.hero section {
+  position: absolute;
+  bottom: 10%;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Move left by 50% of its own width */
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  border-radius: 10%;
+}
+.hero a {
+  text-decoration: none;
+  color: black;
+}
+.hero a:hover {
+  /* color: black; */
+  color: var(--accent2-color);
+}
+.hero section:hover {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  /* color: var(--accent2-color); How do I make it so when I hove the join it changes colors */
+}
+.card {
+  margin: 1rem 2vw;
+  border: 1px solid var(--primary-color);
+  background-color: var(--accent2-color);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card h2 {
+  background-color: var(--accent1-color);
+  display: block;
+  text-align: center;
+  padding: 0.75rem 0;
+  color: black;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.card h3 {
+  text-align: center;
+}
+.card p {
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+.member-spot {
+  text-align: center;
+  /* display: inline-block; */
+  /* justify-content: center; */
+}
+.ads {
+  margin: 1rem 2vw 1rem 2vw;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  background-color: var(--accent2-color);
+  /* overflow: hidden; */
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+}
+.ads a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+/* ID styles */
+#menu {
+  display: inline;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: 0.25rem 2vw;
+}
+#menu::before {
+  content: "\2630";
+}
+
+#menu.open::before {
+  content: "X";
+  /* background-color: var(--greenish); How do I make the background color the same as the menu */
 }
