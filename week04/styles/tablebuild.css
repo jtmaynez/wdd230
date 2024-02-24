@@ -1,0 +1,35 @@
+/** @format */
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  padding: 10px;
+}
+th {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+thead th:nth-child(n + 2) {
+  background-color: #333;
+  color: white;
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+caption {
+  caption-side: bottom;
+  font-size: 13px;
+}
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
