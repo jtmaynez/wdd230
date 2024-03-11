@@ -1,0 +1,32 @@
+/** @format */
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+h2 {
+  color: green;
+}
+section {
+  border: 1px solid black;
+  /* padding: 25px; */
+  margin: 10px;
+  background-color: rgb(187, 242, 181);
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+img {
+  max-width: 50%;
+  height: auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+main {
+  background-color: aliceblue;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}

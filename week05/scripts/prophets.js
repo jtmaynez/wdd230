@@ -5,20 +5,38 @@ const url =
 
 const cards = document.querySelector("#cards");
 async function getProphetData() {
-  const response = await fetch();
+  const response = await fetch(url);
   const data = await response.json();
-  console.table(data.prophets);
+  displayProphets(data.prophets);
 }
 
 const displayProphets = (prophets) => {
   // Card build code goes here
   prophets.forEach((prophet) => {
     const card = document.createElement("section");
-    constfullName = document.createElement("h2");
+    const fullName = document.createElement("h2");
     const portrait = document.createElement("img");
+    const dob = document.createElement("p");
+    const pob = document.createElement("p");
 
-    fullName.textContent = `${prophet.name} ${prophet.lastName}`;
+    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
     portrait.setAttribute("src", prophet.imageurl);
+    portrait.setAttribute(
+      "alt",
+      `Portait of ${prophet.name} ${prophet.lastName}`
+    );
+    dob.textContent = `Date of Birth: ${prophet.birthdate}`;
+    pob.textContent = `Place of Birth: ${prophet.birthplace}`;
+
+    portrait.setAttribute("loading", "lazy");
+    portrait.setAttribute("width", "340");
+    portrait.setAttribute("height", "440");
+
+    card.appendChild(fullName);
+    card.appendChild(dob);
+    card.appendChild(pob);
+    card.appendChild(portrait);
+    cards.appendChild(card);
   });
 };
 
