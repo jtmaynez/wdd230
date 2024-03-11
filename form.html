@@ -1,0 +1,117 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="head-pic"
+        src="images/headerpic.webp"
+        alt="Picture of Justin"
+        loading="lazy"
+        width="400"
+        height="600"
+      />
+      <span>Justin T. Maynes</span>
+      <img
+        src="images/dark-theme.svg"
+        alt="dark mode"
+        id="displayBtn"
+        loading="lazy"
+        width="50"
+        height="25"
+      />
+      <!-- How do I do height and width with svg without messing it up -->
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+      <a href="" class="active">Home</a>
+      <a href="https://jtmaynez.github.io/wdd230/chamber/index.html">Chamber</a>
+      <a href="https://jtmaynez.github.io/wdd230/week01/chamber-site-plan.html"
+        >Site Plan</a
+      >
+      <a href="">Form</a>
+    </nav>
+
+    <main>
+      <form method="get" action="record.html" class="recorded">
+        <label
+          >Username<input type="text" id="username" name="username" required
+        /></label>
+        <label
+          >Password<input
+            type="password"
+            id="password"
+            name="password"
+            required
+            pattern=".{8,}"
+            title="Eight or more characters"
+            placeholder="Must be at least 8 characters"
+        /></label>
+        <label
+          >Password repeated for confirmation<input
+            type="password"
+            id="password_repeat"
+            name="password_repeat"
+            required
+            pattern=".{8,}"
+            title="Eight or more characters"
+        /></label>
+        <label
+          >Email<input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+            title="Please enter a valid email address"
+        /></label>
+        <label>
+          Page Rating
+
+          <input
+            type="range"
+            id="rating"
+            name="rating"
+            min="1"
+            max="10"
+            value="0"
+            step="1"
+            list="rangevalues"
+          />
+          <datalist id="rangevalues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </datalist></label
+        >
+        <div id="rangevalue">0</div>
+        <label
+          >Button <input type="submit" value="Propose My Information" />
+        </label>
+      </form>
+    </main>
+    <footer>
+      <p>Justin Maynes WA, United States</p>
+      <p id="lastModified"></p>
+      <p id="year"></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/form.js"></script>
+  </body>
+</html>

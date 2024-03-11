@@ -1,0 +1,165 @@
+[
+  {
+    "familyName": "Smith",
+    "dateMovedIn": "2019-01-01",
+    "numberOfPeople": 3,
+    "vistiedByBishopric": false,
+    "familyMembers": [
+      {
+        "name": "John",
+        "gender": "male",
+        "birthDate": "2000-01-01"
+      },
+      {
+        "name": "Jane",
+        "gender": "female",
+        "birthDate": "2003-01-01"
+      },
+      {
+        "name": "Joe",
+        "gender": "male",
+        "birthDate": "2010-01-01"
+      }
+    ]
+  },
+  {
+    "familyName": "Johnson",
+    "dateMovedIn": "2019-08-23",
+    "numberOfPeople": 6,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Michael Johnson",
+        "gender": "Male",
+        "birthDate": "1980-02-15"
+      },
+      {
+        "name": "Sarah Johnson",
+        "gender": "Female",
+        "birthDate": "1985-06-29"
+      },
+      {
+        "name": "James Johnson",
+        "gender": "Male",
+        "birthDate": "2010-12-10"
+      },
+      {
+        "name": "Emily Johnson",
+        "gender": "Female",
+        "birthDate": "2013-09-05"
+      },
+      {
+        "name": "David Johnson",
+        "gender": "Male",
+        "birthDate": "2016-07-20"
+      },
+      {
+        "name": "Sophia Johnson",
+        "gender": "Female",
+        "birthDate": "2018-04-14"
+      }
+    ]
+  },
+  {
+    "familyName": "Williams",
+    "dateMovedIn": "2020-11-10",
+    "numberOfPeople": 3,
+    "visitedByBishopric": false,
+    "familyMembers": [
+      {
+        "name": "Christopher Williams",
+        "gender": "Male",
+        "birthDate": "1975-11-02"
+      },
+      {
+        "name": "Jessica Williams",
+        "gender": "Female",
+        "birthDate": "1980-09-17"
+      },
+      {
+        "name": "Andrew Williams",
+        "gender": "Male",
+        "birthDate": "2010-03-25"
+      }
+    ]
+  },
+  {
+    "familyName": "Brown",
+    "dateMovedIn": "2022-02-28",
+    "numberOfPeople": 2,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Matthew Brown",
+        "gender": "Male",
+        "birthDate": "1987-07-11"
+      },
+      {
+        "name": "Amanda Brown",
+        "gender": "Female",
+        "birthDate": "1990-04-26"
+      }
+    ]
+  },
+  {
+    "familyName": "Miller",
+    "dateMovedIn": "2021-05-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Ryan Miller",
+        "gender": "Male",
+        "birthDate": "1982-10-20"
+      },
+      {
+        "name": "Jennifer Miller",
+        "gender": "Female",
+        "birthDate": "1985-12-08"
+      },
+      {
+        "name": "Ethan Miller",
+        "gender": "Male",
+        "birthDate": "2010-07-03"
+      },
+      {
+        "name": "Olivia Miller",
+        "gender": "Female",
+        "birthDate": "2014-09-18"
+      }
+    ]
+  },
+  {
+    "familyName": "Davis",
+    "dateMovedIn": "2023-09-07",
+    "numberOfPeople": 5,
+    "visitedByBishopric": false,
+    "familyMembers": [
+      {
+        "name": "Daniel Davis",
+        "gender": "Male",
+        "birthDate": "1978-03-30"
+      },
+      {
+        "name": "Rachel Davis",
+        "gender": "Female",
+        "birthDate": "1982-08-14"
+      },
+      {
+        "name": "Jacob Davis",
+        "gender": "Male",
+        "birthDate": "2005-11-25"
+      },
+      {
+        "name": "Hannah Davis",
+        "gender": "Female",
+        "birthDate": "2008-06-10"
+      },
+      {
+        "name": "Noah Davis",
+        "gender": "Male",
+        "birthDate": "2015-02-17"
+      }
+    ]
+  }
+]
