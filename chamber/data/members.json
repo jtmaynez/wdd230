@@ -1,0 +1,81 @@
+
+const members = [
+  {
+    "name": "Acme Corporation",
+    "address": "100 Main Street, Anytown, CA 12345",
+    "phoneNumber": "(555) 555-1212",
+    "websiteUrl": "https://www.acmecorporation.com",
+    "imagewithHyperlink": {
+      "fileName": "acme_logo.png",
+      "hyperlink": "https://www.acmecorporation.com/about"
+    },
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "Brilliant Labs",
+    "address": "20 Innovation Way, Silicon Valley, CA 98765",
+    "phoneNumber": "(888) 888- (lightbulb symbol)",
+    "websiteUrl": "https://brilliantlabs.com",
+    "imagewithHyperlink": {
+      "fileName": "brilliant_labs_logo.jpg",
+      "hyperlink": "https://brilliantlabs.com/products"
+    },
+    "membershipLevel": "silver"
+  },
+  {
+    "name": "Green Earth Solutions",
+    "address": "30 Eco Drive, Seattle, WA 90210",
+    "phoneNumber": "(206) 555-EARTH",
+    "websiteUrl": "https://greenearthsolutions.org",
+    "imagewithHyperlink": {
+      "fileName": "green_earth_logo.svg",
+      "hyperlink": "https://greenearthsolutions.org/sustainability"
+    },
+    "membershipLevel": "bronze"
+  },
+  {
+    "name": "Harmony Music",
+    "address": "40 Melody Lane, Austin, TX 78704",
+    "phoneNumber": "(512)  (musical notes symbol)",
+    "websiteUrl": "https://harmony-music.com",
+    "imagewithHyperlink": {
+      "fileName": "harmony_music_logo.gif",
+      "hyperlink": "https://harmony-music.com/instruments"
+    },
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "Imagination Technologies",
+    "address": "50 Innovation Avenue, New York, NY 10001",
+    "phoneNumber": "(646) DREAM (37326)",
+    "websiteUrl": "https://imaginationtech.io",
+    "imagewithHyperlink": {
+      "fileName": "imagination_tech_logo.bmp",
+      "hyperlink": "https://imaginationtech.io/services"
+    },
+    "membershipLevel": "silver"
+  },
+  {
+    "name": "Quick Ship Delivery",
+    "address": "60 Speedy Road, Chicago, IL 60601",
+    "phoneNumber": "(800) SHIP-FAST",
+    "websiteUrl": "https://quickshipdelivery.com",
+    "imagewithHyperlink": {
+      "fileName": "quick_ship_logo.png",
+      "hyperlink": "https://quickshipdelivery.com/rates"
+    },
+    "membershipLevel": "bronze"
+  },
+  {
+    "name": "Reliable Robotics",
+    "address": "70 Robotics Way, Boston, MA 02118",
+    "phoneNumber": "(617) GEAR-UP (432787)",
+    "websiteUrl": "https://reablerobotics.com",
+    "imagewithHyperlink": {
+      "fileName": "reliable_robotics_logo.jpg",
+      "hyperlink": "https://reablerobotics.com/products"
+    },
+    "membershipLevel": "gold"
+  }
+export default members
+]
