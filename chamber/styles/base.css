@@ -45,7 +45,37 @@ footer {
   justify-content: center; /* Center horizontally */
   grid-template-columns: auto 1fr;
 }
+footer img {
+  max-width: 100px; /* Adjust the max-width as needed */
+}
+label {
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+}
+input {
+  display: block;
+  padding: 10px;
+  margin: 0; /* Center horizontally */
+  border: 0;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 1.1rem;
+  text-align: center;
+  /* width: 50%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+fieldset {
+  border: none;
+  text-align: center;
+}
 
+/* Class Styles */
+input.level {
+  margin: 0;
+}
+.level {
+  display: inline;
+}
 .footer-content {
   text-align: center;
   align-items: center;
@@ -54,11 +84,6 @@ footer {
   text-align: center;
   font-size: 1rem;
 }
-footer img {
-  max-width: 100px; /* Adjust the max-width as needed */
-}
-
-/* Class Styles */
 .active {
   background-color: var(--accent2-color);
   color: black;
@@ -172,6 +197,13 @@ footer img {
   color: black;
   display: block;
 }
+.joinChamber {
+  display: grid;
+  grid-template-columns: 1fr; /* Adjust as needed */
+  gap: 20px; /* Adjust as needed */
+  margin: 1rem;
+}
+
 /* ID styles */
 #menu {
   display: inline;
@@ -191,4 +223,47 @@ footer img {
 #menu.open::before {
   content: "X";
   /* background-color: var(--greenish); How do I make the background color the same as the menu */
+}
+#submit {
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10%;
+  background-color: var(--darkGray);
+  margin-top: 10px;
+  width: auto;
+  box-shadow: 0.5px 0.5px 5px black;
+  cursor: pointer;
+}
+
+#formmessage {
+  color: #fb4141;
+}
+#rangevalue {
+  text-align: center;
+  margin-top: 10px;
+}
+#thankyou {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--accent2-color);
+  font-family: "Roboto", sans-serif;
+}
+#benifits {
+  padding: 1rem;
+  margin: 1rem;
+  border: 5px solid var(--accent1-color);
+  background-color: var(--accent2-color);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+#benifits h3 {
+  margin: 1rem;
+}
+#benifits h4 {
+  font-size: 1rem;
+}
+#benifits p {
+  margin: 1rem;
+  font-size: 0.8rem;
 }

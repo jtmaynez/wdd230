@@ -28,3 +28,13 @@ if (numVisits !== 0) {
 numVisits++; // What does the ++ do?
 
 localStorage.setItem("numVisits-ls", numVisits);
+
+function submitForm() {
+  var currentTime = new Date();
+  var form = document.querySelector(".recorded");
+  var hiddenInput = document.querySelector(".timeStamp");
+
+  hiddenInput.setAttribute("value", currentTime.toLocaleString());
+  form.appendChild(hiddenInput);
+  // console.log("submission Time:", hiddenInput.value);
+}
