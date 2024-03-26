@@ -225,8 +225,8 @@ iframe {
 
 /* ID */
 #head-pic {
-  width: 120px;
-  height: 150px;
+  width: 100px;
+  height: auto;
   border-radius: 50%;
 }
 

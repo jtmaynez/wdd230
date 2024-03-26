@@ -1,0 +1,101 @@
+{
+  "weeks": [
+    {
+      "week": "Week 01",
+      "links": [
+        {
+          "url": "week01/holygrail.html",
+          "title": "Layout"
+        },
+        {
+          "url": "week01/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "https://codepen.io/jtmaynez/pen/poYNwZz",
+          "title": "JS Pen"
+        }
+      ]
+    },
+    {
+      "week": "Week 02",
+      "links": [
+        {
+          "url": "week02/bom.html",
+          "title": "Book of Mormon - Top 10"
+        },
+        {
+          "url": "week02/design.html",
+          "title": "Design"
+        },
+        {
+          "url": "https://codepen.io/jtmaynez/pen/BabJBJY",
+          "title": "Hamburger CP"
+        }
+      ]
+    },
+    {
+      "week": "Week 03",
+      "links": [
+        {
+          "url": "week03/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazy Load"
+        },
+        {
+          "url": "week03/responsive-images.html",
+          "title": "Responsive Images"
+        },
+        {
+          "url": "week03/bom.html",
+          "title": "BOM Local Storage"
+        }
+      ]
+    },
+    {
+      "week": "Week 04",
+      "links": [
+        {
+          "url": "https://codepen.io/Justin-Maynes/pen/yLwWxdY",
+          "title": "CSS Pseudo-classes"
+        },
+        {
+          "url": "week04/screenshot_csscomb..webp",
+          "title": "CSS Combinators"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Table Build"
+        },
+        {
+          "url": "week04/form-start/index.html",
+          "title": "Forms"
+        }
+      ]
+    },
+    {
+      "week": "Week 05",
+      "links": [
+        {
+          "url": "https://codepen.io/Justin-Maynes/pen/YzMqPoO",
+          "title": "Pseudo-Element"
+        },
+        {
+          "url": "week05/new-ward-members.json",
+          "title": "JSON Data"
+        },
+        {
+          "url": "week05/prophets.html",
+          "title": "JSON Data"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "Weather"
+        }
+      ]
+    }
+  ]
+}
