@@ -25,16 +25,6 @@ if (numVisits !== 0) {
 } else {
   visitDisplay.textContent = `This is your first visit! Welcome!`;
 }
-numVisits++; // What does the ++ do?
+numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
-
-function submitForm() {
-  var currentTime = new Date();
-  var form = document.querySelector(".recorded");
-  var hiddenInput = document.querySelector(".timeStamp");
-
-  hiddenInput.setAttribute("value", currentTime.toLocaleString());
-  form.appendChild(hiddenInput);
-  // console.log("submission Time:", hiddenInput.value);
-}

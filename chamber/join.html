@@ -69,7 +69,11 @@
         /></label>
         <label
           >Phone:
-          <input type="telephone" name="fname" placeholder="(111) 222-4444"
+          <input
+            type="tel"
+            name="fname"
+            placeholder="(111) 222-4444"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         /></label>
 
         <fieldset>
@@ -91,13 +95,8 @@
             Membership</label
           >
         </fieldset>
-        <label
-          >Description:<input
-            type="textarea"
-            name="description"
-            id="description"
-          />
-        </label>
+        <label> Description: </label>
+        <textarea name="description" id="description"></textarea>
 
         <label
           >Timestamp<input type="hidden" name="time" id="timeStamp" />

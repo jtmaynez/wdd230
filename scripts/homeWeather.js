@@ -14,7 +14,7 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
 
-      //   displayResults(data); // Uncomment when ready
+      displayResults(data); // Uncomment when ready
     } else {
       throw Error(await response.text());
     }
