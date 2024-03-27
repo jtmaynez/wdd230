@@ -13,32 +13,35 @@ async function getMemberData() {
 
 const displayMembers = (members) => {
   // Card build code goes here
-  prophets.forEach((members) => {
+  members.forEach((member) => {
     const card = document.createElement("section");
-    const fullName = document.createElement("h2");
-    const portrait = document.createElement("img");
-    const dob = document.createElement("p");
-    const pob = document.createElement("p");
+    const name = document.createElement("p");
+    const address = document.createElement("p");
+    const phoneNumber = document.createElement("p");
+    const url = document.createElement("a");
+    const logo = document.createElement("img");
+    const lvl = document.createElement("p");
 
-    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-    portrait.setAttribute("src", prophet.imageurl);
-    portrait.setAttribute(
-      "alt",
-      `Portait of ${prophet.name} ${prophet.lastName}`
-    );
-    dob.textContent = `Date of Birth: ${prophet.birthdate}`;
-    pob.textContent = `Place of Birth: ${prophet.birthplace}`;
+    logo.setAttribute("src", member);
+    logo.setAttribute("alt", `Logo of ${member.name} `);
+    name.textContent = `Name: ${member.name}`;
+    address.textContent = `Address: ${member.address}`;
+    phoneNumber.textContent = `Number: ${member.phoneNumber}`;
+    url.textContent = `Website: ${member.websiteUrl}`;
+    lvl.textContent = `Level: ${member.membershipLevel}`;
 
-    portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "340");
-    portrait.setAttribute("height", "440");
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "340");
+    logo.setAttribute("height", "440");
 
-    card.appendChild(fullName);
-    card.appendChild(dob);
-    card.appendChild(pob);
-    card.appendChild(portrait);
+    card.appendChild(name);
+    card.appendChild(address);
+    card.appendChild(phoneNumber);
+    card.appendChild(logo);
+    card.appendChild(url);
+    card.appendChild(lvl);
     cards.appendChild(card);
   });
 };
 
-getProphetData();
+getMemberData();

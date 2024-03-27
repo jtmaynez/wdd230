@@ -6,7 +6,7 @@
       "phoneNumber": "(555) 555-1212",
       "websiteUrl": "https://www.acmecorporation.com",
       "imagewithHyperlink": {
-        "fileName": "acme_logo.png",
+        "fileName": "acme_logo.webp",
         "hyperlink": "https://www.acmecorporation.com/about"
       },
       "membershipLevel": "gold"
@@ -17,7 +17,7 @@
       "phoneNumber": "(888) 888-8888",
       "websiteUrl": "https://brilliantlabs.com",
       "imagewithHyperlink": {
-        "fileName": "brilliant_labs_logo.jpg",
+        "fileName": "brilliant_labs_logo.webp",
         "hyperlink": "https://brilliantlabs.com/products"
       },
       "membershipLevel": "silver"
@@ -28,7 +28,7 @@
       "phoneNumber": "(206) 555-EARTH",
       "websiteUrl": "https://greenearthsolutions.org",
       "imagewithHyperlink": {
-        "fileName": "green_earth_logo.svg",
+        "fileName": "green_earth_logo.webp",
         "hyperlink": "https://greenearthsolutions.org/sustainability"
       },
       "membershipLevel": "bronze"
@@ -50,7 +50,7 @@
       "phoneNumber": "(646) 555-3732",
       "websiteUrl": "https://imaginationtech.io",
       "imagewithHyperlink": {
-        "fileName": "imagination_tech_logo.bmp",
+        "fileName": "imagination_tech_logo.webp",
         "hyperlink": "https://imaginationtech.io/services"
       },
       "membershipLevel": "silver"
@@ -61,7 +61,7 @@
       "phoneNumber": "(800) SHIP-FAST",
       "websiteUrl": "https://quickshipdelivery.com",
       "imagewithHyperlink": {
-        "fileName": "quick_ship_logo.png",
+        "fileName": "quick_ship_logo.webp",
         "hyperlink": "https://quickshipdelivery.com/rates"
       },
       "membershipLevel": "bronze"
@@ -72,7 +72,7 @@
       "phoneNumber": "(617) GEAR-UP (432787)",
       "websiteUrl": "https://reablerobotics.com",
       "imagewithHyperlink": {
-        "fileName": "reliable_robotics_logo.jpg",
+        "fileName": "reliable_robotics_logo.webp",
         "hyperlink": "https://reablerobotics.com/products"
       },
       "membershipLevel": "gold"
