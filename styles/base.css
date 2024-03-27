@@ -23,6 +23,7 @@
   --darkGreenish: #008b86;
   --darkAqua: #006d66;
   --darkDarkGray: #2e2e2e;
+  --primaryFont: "Roboto", sans-serif;
 }
 
 /* HTML Selector */
@@ -260,4 +261,23 @@ iframe {
   width: 24px;
   font-size: 44px;
   cursor: pointer;
+}
+#weatherContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* #linkContainer a::after {
+  color: black;
+} */
+#linkContainer a {
+  color: var(--darkDarkGray);
+  font-weight: lighter;
+  font-family: var(--primaryFont);
+  font-size: 0.9rem;
+}
+
+#linkContainer a:hover {
+  color: var(--darkRed);
 }

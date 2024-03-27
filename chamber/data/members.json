@@ -14,7 +14,7 @@ const members = [
   {
     "name": "Brilliant Labs",
     "address": "20 Innovation Way, Silicon Valley, CA 98765",
-    "phoneNumber": "(888) 888- (lightbulb symbol)",
+    "phoneNumber": "(888) 888-8888",
     "websiteUrl": "https://brilliantlabs.com",
     "imagewithHyperlink": {
       "fileName": "brilliant_labs_logo.jpg",
@@ -36,18 +36,18 @@ const members = [
   {
     "name": "Harmony Music",
     "address": "40 Melody Lane, Austin, TX 78704",
-    "phoneNumber": "(512)  (musical notes symbol)",
+    "phoneNumber": "(512) 777-MUSIC",
     "websiteUrl": "https://harmony-music.com",
     "imagewithHyperlink": {
       "fileName": "harmony_music_logo.gif",
       "hyperlink": "https://harmony-music.com/instruments"
     },
-    "membershipLevel": "gold"
+    "membershipLevel": "np"
   },
   {
     "name": "Imagination Technologies",
     "address": "50 Innovation Avenue, New York, NY 10001",
-    "phoneNumber": "(646) DREAM (37326)",
+    "phoneNumber": "(646) 555-3732",
     "websiteUrl": "https://imaginationtech.io",
     "imagewithHyperlink": {
       "fileName": "imagination_tech_logo.bmp",
@@ -77,5 +77,5 @@ const members = [
     },
     "membershipLevel": "gold"
   }
-export default members
+// export default members
 ]

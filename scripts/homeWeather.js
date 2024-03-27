@@ -13,7 +13,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-
+      console.log(data);
       displayResults(data); // Uncomment when ready
     } else {
       throw Error(await response.text());
@@ -22,13 +22,18 @@ async function apiFetch() {
     console.log(error);
   }
 }
-function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
-  weatherIcon.setAttribute("src", iconsrc);
-  weatherIcon.setAttribute("alt", desc);
-  captionDesc.textContent = `${desc}`;
-}
 
+function displayResults(data) {
+  const locationName = document.querySelector("#locationName");
+  locationName.textContent = `${data.name}`;
+  const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  // const weatherIcon = document.querySelector("#weather-icon");
+  weatherIcon.setAttribute("src", iconSrc);
+  weatherIcon.setAttribute("alt", data.weather[0].description);
+  // weatherIcon.textContent = `${data.weather[0].icon}`;
+  const currentTemp = document.querySelector("#weather");
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const captionDesc = document.querySelector("#descrip");
+  captionDesc.textContent = `- ${data.weather[0].description}`;
+}
 apiFetch();
