@@ -2,7 +2,7 @@
 
 // import members from "./members.json";
 
-const url = `http://127.0.0.1:5501/chamber/data/members.json`;
+const url = `https://jtmaynez.github.io/wdd230/chamber/data/members.json`;
 
 const cards = document.querySelector(`#cards`);
 const grid = document.querySelector(`#grid`);
