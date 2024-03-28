@@ -203,8 +203,70 @@ input.level {
   gap: 20px; /* Adjust as needed */
   margin: 1rem;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.list section img {
+  display: none;
+}
+.list section {
+  display: block;
+  margin: 0;
+  padding: 0.25rem;
+  width: 100%;
+  padding-left: 1em;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list section:nth-child(odd) {
+  background-color: var(--accent2-color);
+}
+.list section p {
+  width: 100%;
+}
+
+.grid section img {
+  width: 40%;
+  height: auto;
+  margin: 1em;
+}
+.grid section {
+  text-align: center;
+  padding: 1em;
+  margin: 1em 10em 1em 10em;
+  background-color: var(--accent2-color);
+  box-shadow: 1px 1px 10px var(--accent1-color);
+}
+
+.grid section a,
+.list section a {
+  text-decoration: none;
+  color: blue;
+
+  text-align: center;
+}
+.list section a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+.grid section a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+.girMenu {
+  text-align: center;
+  margin: 1em;
+}
 
 /* ID styles */
+#grid,
+#list {
+  font-size: 1.5em;
+  padding: 5px;
+}
 #menu {
   display: inline;
   font-size: 2em;

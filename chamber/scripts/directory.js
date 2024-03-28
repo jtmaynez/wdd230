@@ -2,9 +2,11 @@
 
 // import members from "./members.json";
 
-const url = "https://jtmaynez.github.io/wdd230/chamber/data/members.json";
+const url = `http://127.0.0.1:5501/chamber/data/members.json`;
 
-const cards = document.querySelector("#cards");
+const cards = document.querySelector(`#cards`);
+const grid = document.querySelector(`#grid`);
+const list = document.querySelector(`#list`);
 async function getMemberData() {
   const response = await fetch(url);
   const data = await response.json();
@@ -14,34 +16,30 @@ async function getMemberData() {
 const displayMembers = (members) => {
   // Card build code goes here
   members.forEach((member) => {
-    const card = document.createElement("section");
-    const name = document.createElement("p");
-    const address = document.createElement("p");
-    const phoneNumber = document.createElement("p");
-    const url = document.createElement("a");
-    const logo = document.createElement("img");
-    const lvl = document.createElement("p");
-
-    logo.setAttribute("src", member);
-    logo.setAttribute("alt", `Logo of ${member.name} `);
-    name.textContent = `Name: ${member.name}`;
-    address.textContent = `Address: ${member.address}`;
-    phoneNumber.textContent = `Number: ${member.phoneNumber}`;
-    url.textContent = `Website: ${member.websiteUrl}`;
-    lvl.textContent = `Level: ${member.membershipLevel}`;
-
-    logo.setAttribute("loading", "lazy");
-    logo.setAttribute("width", "340");
-    logo.setAttribute("height", "440");
-
-    card.appendChild(name);
-    card.appendChild(address);
-    card.appendChild(phoneNumber);
-    card.appendChild(logo);
-    card.appendChild(url);
-    card.appendChild(lvl);
-    cards.appendChild(card);
+    const card = `
+      <section>
+      <p> ${member.name}</p>
+      <img src="${member.imagewithHyperlink.hyperlink}" alt="Logo of ${member.name}" loading="lazy" width="340" height="440">
+        <p> ${member.address}</p>
+        <p> ${member.phoneNumber}</p>
+        <p>ML: ${member.membershipLevel}</p>
+        <a href="${member.websiteUrl}"> ${member.websiteUrl}</a>
+      </section>
+    `;
+    cards.insertAdjacentHTML(`beforeend`, card);
   });
 };
 
 getMemberData();
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+grid.addEventListener(`click`, () => {
+  cards.classList.remove("list");
+  cards.classList.add("grid");
+});
+
+list.addEventListener(`click`, () => {
+  cards.classList.remove("grid");
+  cards.classList.add("list");
+});

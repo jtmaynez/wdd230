@@ -7,9 +7,9 @@
       "websiteUrl": "https://www.acmecorporation.com",
       "imagewithHyperlink": {
         "fileName": "acme_logo.webp",
-        "hyperlink": "https://www.acmecorporation.com/about"
+        "hyperlink": "images/acme_logo.webp"
       },
-      "membershipLevel": "gold"
+      "membershipLevel": "Gold"
     },
     {
       "name": "Brilliant Labs",
@@ -18,9 +18,9 @@
       "websiteUrl": "https://brilliantlabs.com",
       "imagewithHyperlink": {
         "fileName": "brilliant_labs_logo.webp",
-        "hyperlink": "https://brilliantlabs.com/products"
+        "hyperlink": "images/brilliant_labs_logo.webp"
       },
-      "membershipLevel": "silver"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Green Earth Solutions",
@@ -29,9 +29,9 @@
       "websiteUrl": "https://greenearthsolutions.org",
       "imagewithHyperlink": {
         "fileName": "green_earth_logo.webp",
-        "hyperlink": "https://greenearthsolutions.org/sustainability"
+        "hyperlink": "images/green_earth_logo.webp"
       },
-      "membershipLevel": "bronze"
+      "membershipLevel": "Bronze"
     },
     {
       "name": "Harmony Music",
@@ -39,10 +39,10 @@
       "phoneNumber": "(512) 777-MUSIC",
       "websiteUrl": "https://harmony-music.com",
       "imagewithHyperlink": {
-        "fileName": "harmony_music_logo.gif",
-        "hyperlink": "https://harmony-music.com/instruments"
+        "fileName": "harmony_music_logo.webp",
+        "hyperlink": "images/harmony_music_logo.webp"
       },
-      "membershipLevel": "np"
+      "membershipLevel": "NP"
     },
     {
       "name": "Imagination Technologies",
@@ -51,9 +51,9 @@
       "websiteUrl": "https://imaginationtech.io",
       "imagewithHyperlink": {
         "fileName": "imagination_tech_logo.webp",
-        "hyperlink": "https://imaginationtech.io/services"
+        "hyperlink": "images/imagination_tech_logo.webp"
       },
-      "membershipLevel": "silver"
+      "membershipLevel": "Silver"
     },
     {
       "name": "Quick Ship Delivery",
@@ -62,9 +62,9 @@
       "websiteUrl": "https://quickshipdelivery.com",
       "imagewithHyperlink": {
         "fileName": "quick_ship_logo.webp",
-        "hyperlink": "https://quickshipdelivery.com/rates"
+        "hyperlink": "images/quick_ship_logo.webp"
       },
-      "membershipLevel": "bronze"
+      "membershipLevel": "Bronze"
     },
     {
       "name": "Reliable Robotics",
@@ -73,9 +73,9 @@
       "websiteUrl": "https://reablerobotics.com",
       "imagewithHyperlink": {
         "fileName": "reliable_robotics_logo.webp",
-        "hyperlink": "https://reablerobotics.com/products"
+        "hyperlink": "images/reliable_robotics_logo.webp"
       },
-      "membershipLevel": "gold"
+      "membershipLevel": "Gold"
     }
   ]
 }
